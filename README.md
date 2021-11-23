@@ -7,7 +7,7 @@ See [Manannán mac Lir](https://en.wikipedia.org/wiki/Manann%C3%A1n_mac_Lir)
 1. Install the [latest version of Python](https://www.python.org/downloads/), **taking care to ADD PYTHON TO PATH**
 1. Open a command prompt (e.g. Start->cmd in windows)
 1. Use Python package installer to install some packages:
-```pip install numpy matplotlib json pillow tifffile skimage```
+```pip install numpy matplotlib json pillow tifffile scikit-image```
 1. Navigate to src directory
 
 ## Set up image directories
