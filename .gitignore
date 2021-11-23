@@ -112,3 +112,15 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+*.mcd
+*.tiff
+*.png
+*.PNG
+*.jpg
+*.jpeg
+*.JPG
+*.JPEG
+*.TIFF
+*.tif
+*.TIF
