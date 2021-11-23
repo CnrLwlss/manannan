@@ -9,7 +9,7 @@ See [Manannán mac Lir](https://en.wikipedia.org/wiki/Manann%C3%A1n_mac_Lir)
     * Video showing installation [here](https://www.youtube.com/watch?v=rcI1_e38BWs).
 4. Open a command prompt (e.g. Start->cmd in windows)
 5. Use Python package installer to install some packages:
-    * ```pip install numpy matplotlib json pillow tifffile scikit-image```
+    * ```pip install numpy matplotlib pillow tifffile scikit-image```
 7. Navigate to src directory
 
 ## Set up image directories
