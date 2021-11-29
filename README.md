@@ -20,7 +20,7 @@ See [Manannán mac Lir](https://en.wikipedia.org/wiki/Manann%C3%A1n_mac_Lir)
 
 ## Generate image previews from multipage TIFFs
 1. Navigate to src directory
-1. Download and save [```explore.py```](https://raw.githubusercontent.com/CnrLwlss/manannan/main/src/annotation.py) into this directory
+1. Download and save [```explore.py```](https://raw.githubusercontent.com/CnrLwlss/manannan/main/src/annotation.py) into this directory (right-click [link](https://raw.githubusercontent.com/CnrLwlss/manannan/main/src/annotation.py) and choose "Save link as..." to download)
 1. Execute ```explore.py``` (e.g. by double-clicking on ```explore.py```)
 1. Will create a new directory in src: PreviewImages
 1. Will also create subdirectories corresponding to each multipage TIFF in MultiTIFFS
@@ -40,6 +40,6 @@ See [Manannán mac Lir](https://en.wikipedia.org/wiki/Manann%C3%A1n_mac_Lir)
 
 ## Generate annotation preview images
 1. Navigate to src directory
-1. Download and save [```annotation.py```](https://raw.githubusercontent.com/CnrLwlss/manannan/main/src/annotation.py) into this directory
+1. Download and save [```annotation.py```](https://raw.githubusercontent.com/CnrLwlss/manannan/main/src/annotation.py) into this directory (right-click [link](https://raw.githubusercontent.com/CnrLwlss/manannan/main/src/annotation.py) and choose "Save link as..." to download)
 1. Execute ```annotation.py``` (e.g. by double-clicking on ```annotation.py```)
 1. Will generate further versions of preview images highlighting annotated areas (calculated from .geojson files)
