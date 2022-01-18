@@ -38,8 +38,10 @@ See [Manannán mac Lir](https://en.wikipedia.org/wiki/Manann%C3%A1n_mac_Lir)
    * Choose "All objects" in the Export dropdown menu
    * OK -> Write file to the relevant geojson_annotations directory
 
-## Generate annotation preview images
+## Generate annotation preview images & ROI quantifications
 1. Navigate to src directory
 1. Download and save [```annotation.py```](https://raw.githubusercontent.com/CnrLwlss/manannan/main/src/annotation.py) into this directory (right-click [link](https://raw.githubusercontent.com/CnrLwlss/manannan/main/src/annotation.py) and choose "Save link as..." to download)
 1. Execute ```annotation.py``` (e.g. by double-clicking on ```annotation.py```)
-1. Will generate further versions of preview images highlighting annotated areas (calculated from .geojson files)
+1. Generates further versions of preview images highlighting numbered, annotated areas (calculated from .geojson files)
+1. Generates an overall summary .csv file containing area of each ROI, along with area of positive signal from each channel within each ROI and average positive intensity within each ROI
+1. Generates correlation matrix, showing Pearson's pairwise correlations between all intensities in positive pixels from all pairs of channels.  Note that AB correlation is not equal to BA correlation because of different "positive" pixels in each case.
