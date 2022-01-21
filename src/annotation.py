@@ -81,7 +81,6 @@ for pat in pats:
                 print("Error: More than one .tiff file found for "+pat)
                 break
             images,metals,labels = ex.parseMultiTIFF(fnames[0])
-            imax = np.quantile(images,0.95)
             area = np.sum(mask)
             corrs = np.zeros((len(labels),len(labels)))
             for i in range(0,len(labels)):
