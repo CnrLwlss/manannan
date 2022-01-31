@@ -58,6 +58,8 @@ for pat in pats:
     for annotationfile in annotationfiles:
         annroot = annotationfile.replace(".geojson","")
         anndir = os.path.join("PreviewImages",pat,annroot)
+        if not os.path.exists(anndir):
+            os.mkdir(anndir)
         black = Image.new('L', im.size)
         red = Image.new('L', im.size)
         with open(os.path.join("PreviewImages",pat,"geojson_annotations",annotationfile)) as f:
@@ -124,7 +126,7 @@ for pat in pats:
 
             df_long = pd.DataFrame({'label_a':a, 'label_b':b, 'correlation':c})
             df_long = df_long[df_long.label_a!=df_long.label_b]
-            df_long.sort_values("correlation",ascending=False)
+            df_long = df_long.sort_values("correlation",ascending=False)
             df_long.to_csv(os.path.join(anndir,pat+"_"+annroot+"_CorrelationsRanked_"+'ROI{:04d}'.format(f)+".csv"))
 
             imd = ImageDraw.Draw(black)
@@ -134,11 +136,6 @@ for pat in pats:
             mid = np.average(coords,axis=0)
             font = ImageFont.truetype("LEMONMILK-Regular.otf",75)
             imd_red.text((int(round(mid[0])),int(round(mid[1]))),'{:04d}'.format(f),fill="white",font=font)
-
-        annroot = annotationfile.replace(".geojson","")
-        anndir = os.path.join("PreviewImages",pat,annroot)
-        if not os.path.exists(anndir):
-            os.mkdir(anndir)
 
         for filename in ims:
             im = Image.open(os.path.join(imdir,filename))
