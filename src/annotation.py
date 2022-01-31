@@ -127,7 +127,7 @@ for pat in pats:
             df_long = pd.DataFrame({'label_a':a, 'label_b':b, 'correlation':c})
             df_long = df_long[df_long.label_a!=df_long.label_b]
             df_long = df_long.sort_values("correlation",ascending=False)
-            df_long.to_csv(os.path.join(anndir,pat+"_"+annroot+"_CorrelationsRanked_"+'ROI{:04d}'.format(f)+".csv"))
+            df_long.to_csv(os.path.join(anndir,pat+"_"+annroot+"_CorrelationsRanked_"+'ROI{:04d}'.format(f)+".csv"), index=False)
 
             imd = ImageDraw.Draw(black)
             imd_red = ImageDraw.Draw(red)
