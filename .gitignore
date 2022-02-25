@@ -126,3 +126,4 @@ dmypy.json
 *.TIF
 *.csv
 *.zip
+*.pdf
